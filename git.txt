@@ -23,4 +23,8 @@
               git restore <file>     恢复文件
 
               git commit -m "second commit" git.txt    提交并写上注释
+
+4版本查看
+   
+              git log  查看版本信息
                     
