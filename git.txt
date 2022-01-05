@@ -26,5 +26,15 @@
 
 4版本查看
    
-              git log  查看版本信息
+              git log          查看版本信息      --pretty=oneline   或者--oneline         ，b上翻，空格下翻，q退出
+
+              git reflog     查看版本信息带指针步数
+
+5版本移动   reset 的参数有--hard      --soft     --mixed
+
+             1索引值法       git reset --hard  b08b77c   索引值的移动操作法
+             2符号^法        git reset --hard HEAD^      几个^符号退几步如git reset --hard HEAD^^^^^^^^
+             3符号~法        git reset --hard HEAD~3      符号~后面的数字是几就退几步
+
+              
                     
