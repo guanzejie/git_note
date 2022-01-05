@@ -1,0 +1,16 @@
+1 初始化本地库
+                     git init
+
+2设置签名 （项目级别优先于系统级别的签名）项目级别得签名信息保存在.git/config文件夹下
+
+                   //git config                  项目级别                        项目级别得签名信息保存在.git/config文件夹下
+                   //git config  --global    系统级别                        系统级别得签名信息保存在C:\Users\42406\.gitconfig文件夹下
+
+               git config user.name guan
+               git config user.email 424069281@QQ.com
+
+3添加提交
+
+             git status 查看工作区的缓冲区的状态
+
+                    
