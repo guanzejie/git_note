@@ -11,6 +11,16 @@
 
 3添加提交
 
+             git add git.txt       把文件添加到缓冲区  ，如果后悔了不想添加到缓冲区  git rm --cached git.txt
+
              git status 查看工作区的缓冲区的状态
 
+             git commit git.txt    提交到服务器，然后键入i写注释，：wq退出
+
+
+   如果提交后的文件修改了需要重新添加缓冲器和重新提交，也可以恢复文件
+
+              git restore <file>     恢复文件
+
+              git commit -m "second commit" git.txt    提交并写上注释
                     
