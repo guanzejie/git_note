@@ -68,4 +68,18 @@
                                git remote -v   查看别名
 
       4推送本地库 git push 网址或者别名 分支      如git push note master
+
+      5克隆到本地库
+                    1创建文件夹并进入文件夹
+                    2到网址得 code 栏复制网址
+                    3执行 git clone 网址 得操作
+
+      6 如果有其它用户需要加入团队一起开发必须把用户加入团队
+                    1在网页得 settings 中找到 manage access   点击   add people 
+                    2填入对方账号，复制链接发送给对方
+
+      7 抓取远程库的代码
+                    1  git fetch 网址或者别名 分支     （只是下载到了本地变成了一个分支，并不会覆盖）
+                    2  可用git checkout  网址/master   切换到下载的分支
+                    3  然后切换回原分支git checkout  master   执行分支合并  git merge note/master
                     
