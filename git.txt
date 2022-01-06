@@ -47,10 +47,14 @@
             1   git branch -v                查看分支
             2   git branch hot_fix         创建名为hot_fix 分支
             3   git checkout hot_fix      切换到hot_fix 分支
-            4 合并分支
-                      1切换到接受修改得分支（需要增加内容得分支）
-                      2执行合并命令
-                                              git merge hot_fix
+            4   合并分支  git merge [分支名]
+                      1切换到接受修改得分支（需要增加内容得分支）git checkout master
+                      2执行合并命令      git merge hot_fix
+
+            5合并冲突解决
+                     1手动解决，删除特殊符号
+                      2执行 git add [文件名]
+                      3执行 git commit       解决冲突（不带文件名）
 
               
                     
