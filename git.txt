@@ -1,7 +1,9 @@
-1 初始化本地库
+一 、  本地操作
+
+   1 初始化本地库
                      git init
 
-2设置签名 （项目级别优先于系统级别的签名）项目级别得签名信息保存在.git/config文件夹下
+   2设置签名 （项目级别优先于系统级别的签名）项目级别得签名信息保存在.git/config文件夹下
 
                    //git config                  项目级别                        项目级别得签名信息保存在.git/config文件夹下
                    //git config  --global    系统级别                        系统级别得签名信息保存在C:\Users\42406\.gitconfig文件夹下
@@ -9,7 +11,7 @@
                git config user.name guan
                git config user.email 424069281@QQ.com
 
-3添加提交
+   3添加提交
 
              git add git.txt       把文件添加到缓冲区  ，如果后悔了不想添加到缓冲区  git rm --cached git.txt
 
@@ -18,31 +20,31 @@
              git commit git.txt    提交到服务器，然后键入i写注释，：wq退出
 
 
-   如果提交后的文件修改了需要重新添加缓冲器和重新提交，也可以恢复文件
+      如果提交后的文件修改了需要重新添加缓冲器和重新提交，也可以恢复文件
 
               git restore <file>     恢复文件
 
               git commit -m "second commit" git.txt    提交并写上注释
 
-4版本查看
+   4版本查看
    
               git log          查看版本信息      --pretty=oneline   或者--oneline         ，b上翻，空格下翻，q退出
 
               git reflog     查看版本信息带指针步数
 
-5版本移动   reset 的参数有--hard      --soft     --mixed
+   5版本移动   reset 的参数有--hard      --soft     --mixed
 
              1索引值法       git reset --hard  b08b77c   索引值的移动操作法
              2符号^法        git reset --hard HEAD^      几个^符号退几步如git reset --hard HEAD^^^^^^^^
              3符号~法        git reset --hard HEAD~3      符号~后面的数字是几就退几步
 
-6比较差异
+   6比较差异
        
              git diff git.txt                比较修改后的差异    （将工作区的文件和缓冲区的文件去比较）
              git diff HEAD^ git.txt    比较修改后的差异    （将本地库的某个历史文件和工作区比较）
              git diff                          比较多个文件
 
-7分支
+   7分支
 
             1   git branch -v                查看分支
             2   git branch hot_fix         创建名为hot_fix 分支
@@ -55,6 +57,8 @@
                      1手动解决，删除特殊符号
                       2执行 git add [文件名]
                       3执行 git commit       解决冲突（不带文件名）
+
+二 、 远程操作
 
               
                     
