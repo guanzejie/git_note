@@ -36,5 +36,21 @@
              2符号^法        git reset --hard HEAD^      几个^符号退几步如git reset --hard HEAD^^^^^^^^
              3符号~法        git reset --hard HEAD~3      符号~后面的数字是几就退几步
 
+6比较差异
+       
+             git diff git.txt                比较修改后的差异    （将工作区的文件和缓冲区的文件去比较）
+             git diff HEAD^ git.txt    比较修改后的差异    （将本地库的某个历史文件和工作区比较）
+             git diff                          比较多个文件
+
+7分支
+
+            1   git branch -v                查看分支
+            2   git branch hot_fix         创建名为hot_fix 分支
+            3   git checkout hot_fix      切换到hot_fix 分支
+            4 合并分支
+                      1切换到接受修改得分支（需要增加内容得分支）
+                      2执行合并命令
+                                              git merge hot_fix
+
               
                     
