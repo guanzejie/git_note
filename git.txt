@@ -82,4 +82,15 @@
                     1  git fetch 网址或者别名 分支     （只是下载到了本地变成了一个分支，并不会覆盖）
                     2  可用git checkout  网址/master   切换到下载的分支
                     3  然后切换回原分支git checkout  master   执行分支合并  git merge note/master
+
+                    4可以使用 给(git pull 网址或者别名 分支 )命令，相当于 fetch和merge两个操作合并一起做
+
+      8 如果是团队合作，在push你的文件之前，必须先抓取pull一份最新的服务器上的文件，解决分支冲突后才能push
+
+三  、 跨团队合作
+
+      1 其他团队先在我方网站里fork一份数据
+
+      2 
+          
                     
