@@ -60,5 +60,12 @@
 
 二 、 远程操作
 
-              
+      1登录创建仓库   在网页上点击    +  
+
+      2复制仓库得地址https://github.com/guanzejie/git_note.git
+
+      3给地址起个别名 git remote add  别名 https://github.com/guanzejie/git_note.git
+                               git remote -v   查看别名
+
+      4推送本地库 git push 网址或者别名 分支      如git push note master
                     
