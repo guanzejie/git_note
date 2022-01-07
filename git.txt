@@ -58,7 +58,7 @@
                       2执行 git add [文件名]
                       3执行 git commit       解决冲突（不带文件名）
 
-二 、 远程操作
+二 、 远程操作                        ******凭据管理********
 
       1登录创建仓库   在网页上点击    +  
 
@@ -72,17 +72,17 @@
       5克隆到本地库
                     1创建文件夹并进入文件夹
                     2到网址得 code 栏复制网址
-                    3执行 git clone 网址 得操作
+                    3转换到其他文件夹工程（以免造成混乱）
+                    4执行 git clone 网址 得操作
 
       6 如果有其它用户需要加入团队一起开发必须把用户加入团队
-                    1在网页得 settings 中找到 manage access   点击   add people 
+                    1在网页的 settings 中找到 manage access   点击   add people 
                     2填入对方账号，复制链接发送给对方
 
       7 抓取远程库的代码
                     1  git fetch 网址或者别名 分支     （只是下载到了本地变成了一个分支，并不会覆盖）
                     2  可用git checkout  网址/master   切换到下载的分支
                     3  然后切换回原分支git checkout  master   执行分支合并  git merge note/master
-
                     4可以使用 给(git pull 网址或者别名 分支 )命令，相当于 fetch和merge两个操作合并一起做
 
       8 如果是团队合作，在push你的文件之前，必须先抓取pull一份最新的服务器上的文件，解决分支冲突后才能push
@@ -90,7 +90,10 @@
 三  、 跨团队合作
 
       1 其他团队先在我方网站里fork一份数据
-
-      2 
+      2 clone到本地修改完后然后push到远程服务器
+      3 然后点击pull requests栏，点击new pull requests ，查看修改内容后点击create pull requests栏，编写留言给对方
+      4 对方在pull requests 栏会收到消息，可以查看以及回复
+      5 对方在file changed 栏可以看到修改内容，对代码进行审核，审核完点击merge pull requests栏进行合并
+      6 编写日志 然后点击confirm merge
           
                     
