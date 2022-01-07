@@ -95,5 +95,14 @@
       4 对方在pull requests 栏会收到消息，可以查看以及回复
       5 对方在file changed 栏可以看到修改内容，对代码进行审核，审核完点击merge pull requests栏进行合并
       6 编写日志 然后点击confirm merge
+
+
+四  、  ssh免密码登录
+
+                 1生产ssh目录   ssh-keygen -t rsa -C 账号
+                 2打开生产的id_rsa.pub文件复制内容
+                 3在网页上点击头像-设置-SSH and GPG keys-new ssh key 复制到里面并写好标题
+                 4回到库的工作区 使用git remote 别名 ssh网址创建ssh别名（也可以直接用网址）如git remote sssh git@github.com:guanzejie/git_note.git
+                 5推送到远程服务区并不需要密码了
           
                     
