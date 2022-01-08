@@ -104,5 +104,6 @@
                  3在网页上点击头像-设置-SSH and GPG keys-new ssh key 复制到里面并写好标题
                  4回到库的工作区 使用git remote 别名 ssh网址创建ssh别名（也可以直接用网址）如git remote sssh git@github.com:guanzejie/git_note.git
                  5推送到远程服务区并不需要密码了
+五
           
                     

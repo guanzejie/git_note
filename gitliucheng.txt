@@ -1,0 +1,12 @@
+git 使用流程
+   
+      1进入文件夹打开git bash here
+
+      2初始化文件夹（生产.git文件夹）                                                              git init
+                                     .git文件夹里包含了用户的签名，以及版本信息等
+
+      3检测可管理的文件状态                                                                            git status
+
+      4把需要管理的文件添加到缓冲区    （git add .     管理所以文件）                git add 文件名    
+ 
+      5生成版本 git commit -m “注释” 文件名                                                git commit 文件名                
