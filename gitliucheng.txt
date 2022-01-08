@@ -42,7 +42,7 @@ git 使用流程
        17从服务器里克隆代码到本机（连分支一起克隆，分支不可见）                        21 git clone  网站或别名   
 
        18从服务器上跟新本地文件      git pull                                                           22  git pull  网站或别名  分支名    
-                 git pull相当于git  fetch（下载分支）和git  merge 的合体                     23  git fetch 网站或别名  分支名 
+                 git pull相当于git  fetch（下载分支）和git  merge 的合体                     23  git fetch 网站或别名  分支名      git  merge 网站或别名/分支
                                      git  fetch下载后会变成另一个分支                                   24  git checkout  网址/master   
 
                                                                            
