@@ -45,6 +45,8 @@ git 使用流程
                  git pull相当于git  fetch（下载分支）和git  merge 的合体                     23  git fetch 网站或别名  分支名      git  merge 网站或别名/分支
                                      git  fetch下载后会变成另一个分支                                   24  git checkout  网址/master   
 
+        19成ssh目录ssh-keygen -t rsa -C 424069281@QQ.com                               25 ssh-keygen -t rsa -C 账号
+
                                                                            
 
       

@@ -73,7 +73,7 @@
                     1创建文件夹并进入文件夹
                     2到网址得 code 栏复制网址
                     3转换到其他文件夹工程（以免造成混乱）
-                    4执行 git clone 网址 得操作
+                    4执行 git clone 网址 的操作
 
       6 如果有其它用户需要加入团队一起开发必须把用户加入团队
                     1在网页的 settings 中找到 manage access   点击   add people 
@@ -99,10 +99,10 @@
 
 四  、  ssh免密码登录
 
-                 1生产ssh目录   ssh-keygen -t rsa -C 账号
+                 1生成ssh目录   ssh-keygen -t rsa -C 账号
                  2打开生产的id_rsa.pub文件复制内容
                  3在网页上点击头像-设置-SSH and GPG keys-new ssh key 复制到里面并写好标题
-                 4回到库的工作区 使用git remote 别名 ssh网址创建ssh别名（也可以直接用网址）如git remote sssh git@github.com:guanzejie/git_note.git
+                 4回到库的工作区 使用git remote add  别名 ssh网址创建ssh别名（也可以直接用网址）如git remote add  ssh git@github.com:guanzejie/git_note.git
                  5推送到远程服务区并不需要密码了
 五
           
