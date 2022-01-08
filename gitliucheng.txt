@@ -2,11 +2,22 @@ git 使用流程
    
       1进入文件夹打开git bash here
 
-      2初始化文件夹（生产.git文件夹）                                                              git init
+      2初始化文件夹（生产.git文件夹）                                                                    git init
                                      .git文件夹里包含了用户的签名，以及版本信息等
+                                     设置签名账号                                                                  git config user.name guan
+                                     设置签名邮箱                                                                  git config user.email 424069281@QQ.com
 
-      3检测可管理的文件状态                                                                            git status
+      3检测可管理的文件状态                                                                                  git status
+                      未添加到缓冲区或修改过的的文件是红色，添加缓冲区的是绿色
 
-      4把需要管理的文件添加到缓冲区    （git add .     管理所以文件）                git add 文件名    
+      4把需要管理的文件添加到缓冲区    （git add .     管理所以文件）                     git add 文件名
+                                                           退出缓冲区                                              git reset HEAD 文件名 
+                                                           恢复上一版本                                           git checkout -- 文件名            
  
-      5生成版本 git commit -m “注释” 文件名                                                git commit 文件名                
+      5生成版本 git commit -m “注释”（所有文件）                                             git commit 文件名      
+
+      6查看版本 git log或git reflog                                                                         git reflog     
+
+      7版本之间回滚reset 的参数有--hard      --soft     --mixed                                git reset --hard 哈希值
+
+      8如果想恢复删除的文件git restore <file>                                                        git restore <file> 
