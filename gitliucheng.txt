@@ -2,22 +2,49 @@ git 使用流程
    
       1进入文件夹打开git bash here
 
-      2初始化文件夹（生产.git文件夹）                                                                    git init
+      2初始化文件夹（生产.git文件夹）                                                                   1   git init
                                      .git文件夹里包含了用户的签名，以及版本信息等
-                                     设置签名账号                                                                  git config user.name guan
-                                     设置签名邮箱                                                                  git config user.email 424069281@QQ.com
+                                     设置签名账号                                                                 2  git config user.name guan
+                                     设置签名邮箱                                                                 3  git config user.email 424069281@QQ.com
 
-      3检测可管理的文件状态                                                                                  git status
+      3检测可管理的文件状态                                                                                 4 git status
                       未添加到缓冲区或修改过的的文件是红色，添加缓冲区的是绿色
 
-      4把需要管理的文件添加到缓冲区    （git add .     管理所以文件）                     git add 文件名
-                                                           退出缓冲区                                              git reset HEAD 文件名 
-                                                           恢复上一版本                                           git checkout -- 文件名            
+      4把需要管理的文件添加到缓冲区    （git add .     管理所以文件）                    5 git add 文件名
+                                                           退出缓冲区                                             6 git reset HEAD 文件名 
+                                                           恢复上一版本                                          7 git checkout -- 文件名            
  
-      5生成版本 git commit -m “注释”（所有文件）                                             git commit 文件名      
+      5生成版本 git commit -m “注释”（所有文件）                                           8 git commit 文件名      
 
-      6查看版本 git log或git reflog                                                                         git reflog     
+      6查看版本 git log或git reflog                                                                       9 git reflog     
 
-      7版本之间回滚reset 的参数有--hard      --soft     --mixed                                git reset --hard 哈希值
+      7版本之间回滚reset 的参数有--hard      --soft     --mixed                              10 git reset --hard 哈希值
 
-      8如果想恢复删除的文件git restore <file>                                                        git restore <file> 
+      8如果想恢复删除的文件git restore <file>                                                      11 git restore <file> 
+
+      9版本对比    git diff 文件 /版本                                                                     12 git diff
+
+      10查看分支git branch -v                                                                              13 git branch -v
+
+      11创建分支git branch newbranch                                                                14 git branch 名字
+
+      12切换分支git checkout master                                                                   15 git checkout 分支名
+
+      13合并分支到当前分支git merge newbranch                                                 16 git merge 分支名
+
+       14删除多余的分支git branch -d newbranch                                                 17 git branch -d 分支名 
+
+       15给远程库地址创建别名                                                                              18 git remote add 别名  网站
+                                           查看别名                                                                 19 git remote -v
+
+       16推送到服务器                                                                                           20 git push 网站或别名  分支名        
+
+       17从服务器里克隆代码到本机（连分支一起克隆，分支不可见）                        21 git clone  网站或别名   
+
+       18从服务器上跟新本地文件      git pull                                                           22  git pull  网站或别名  分支名    
+                 git pull相当于git  fetch（下载分支）和git  merge 的合体                     23  git fetch 网站或别名  分支名 
+                                     git  fetch下载后会变成另一个分支                                   24  git checkout  网址/master   
+
+                                                                           
+
+      
